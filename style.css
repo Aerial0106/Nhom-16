@@ -174,3 +174,59 @@ footer {
     0% { background-size: 100%; }
     100% { background-size: 110%; }
 }
+
+/* Team Section */
+.team h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 1s ease-in-out;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(210, 21, 60, 0.3);
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 2px solid #d2153c;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.team-member a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Đảm bảo toàn bộ nội dung trong thẻ a */
+}
+
+.team-member a:hover h3 {
+    color: #d2153c; /* Thay đổi màu tên khi hover */
+}
